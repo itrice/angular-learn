@@ -2,11 +2,15 @@ import { Injectable } from '@angular/core';
 import { Hero } from "../app/hero";
 import { HEROES } from "../app/mock-heroes";
 import { IService } from "../app/hero.IService";
+import { HeroesComponent } from './heroes/heroes.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MyService implements IService {
+  getHero(id: number): Hero {    
+    return HEROES.find(hero=>hero.id == id);
+  }
 
   getHeroes(): Hero[] {
     //alert('getHeroes');
@@ -18,6 +22,9 @@ export class MyService implements IService {
 
 @Injectable({ providedIn: 'root' })
 export class ChineseHeroService implements IService {
+  getHero(id: number): Hero {
+    return this.getHeroes().find(hero=>hero.id == id);
+  }
   getHeroes(): Hero[] {
     return [
       { id: 21, name: '钟馗' },

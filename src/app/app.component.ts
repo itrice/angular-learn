@@ -5,7 +5,7 @@ import { MyService,ChineseHeroService } from './myService';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less'],
-  providers:[{provide: 'IService', useClass: ChineseHeroService}]
+  providers:[{provide: 'IService', useClass: ChineseHeroService}] // useValue
 })
 export class AppComponent {
   title = 'Tour of Heroes';

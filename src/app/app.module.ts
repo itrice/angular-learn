@@ -7,13 +7,17 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { KingComponent } from './king/king.component';
 import { FormsModule} from '@angular/forms';
 import { HeroDetialComponent } from './hero-detial/hero-detial.component';
+import { CopyrightComponent } from './copyright/copyright.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     KingComponent,
-    HeroDetialComponent
+    HeroDetialComponent,
+    CopyrightComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

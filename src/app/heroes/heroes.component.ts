@@ -1,7 +1,6 @@
 import { Component, OnInit, Inject, InjectionToken, inject } from '@angular/core';
 import { IService } from "../hero.IService";
 import { Hero } from '../hero';
-import { MyService } from "../myService";
 
 @Component({
   selector: 'app-heroes',  
