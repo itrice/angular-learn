@@ -9,6 +9,7 @@ import { FormsModule} from '@angular/forms';
 import { HeroDetialComponent } from './hero-detial/hero-detial.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
