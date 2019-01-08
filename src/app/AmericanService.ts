@@ -7,7 +7,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 @Injectable({
   providedIn: 'root'
 })
-export class MyService implements IService {
+export class AmericanService implements IService {
   getHero(id: number): Hero {    
     return HEROES.find(hero=>hero.id == id);
   }
@@ -39,4 +39,15 @@ export class ChineseHeroService implements IService {
       { id: 30, name: '乔峰' }
     ];
   }
+}
+
+@Injectable()
+export class XXXHeroService implements IService {
+  getHeroes(): Hero[] {
+    throw new Error("Method not implemented.");
+  }  getHero(id: number): Hero {
+    throw new Error("Method not implemented.");
+  }
+
+
 }
